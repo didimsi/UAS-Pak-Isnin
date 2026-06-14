@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
     <div class="header">
         <img class="logo" src="logobni.png" alt="" srcset="">
         <div class="header-title">
@@ -16,21 +15,20 @@
         </div>
     </div>
 
-    <!-- Main Container -->
     <div class="container">
-        <!-- Left Section -->
         <div class="left-section">
-            <!-- Menu Section -->
             <div class="menu-section">
                 <h2>MENU</h2>
                 <div class="menu-buttons">
+                    <button class="menu-btn" onclick="showDefault()">Home</button>
                     <button class="menu-btn" onclick="showBerita()">Berita</button>
                     <button class="menu-btn" onclick="showProduk()">Produk kami</button>
+                    <button class="menu-btn" onclick="window.location.href='tambahnasabah.html'">Tambah Nasabah</button>
+                    <button class="menu-btn" onclick="window.location.href='datanasabah.html'">Data Nasabah</button>
                     <button class="menu-btn" onclick="window.location.href='ebanking.html'">E-Banking</button>
                 </div>
             </div>
 
-            <!-- Kalkulator Section -->
             <div class="kalkulator-section">
                 <h2>KALKULATOR</h2>
                 <div class="kalkulator-label">Hitung Kurs Rupiah → Dolar</div>
@@ -40,16 +38,13 @@
             </div>
         </div>
 
-        <!-- Main Content -->
         <div class="main-content">
-            <!-- Default Content -->
             <div id="content-default">
                 <h2>Tahukan anda ?</h2>
                 <p>BNI merupakan Bank BUMN (Badan Usaha Milik Negara) pertama yang menjadi perusahaan publik setelah mencatatkan sahamnya di Bursa Efek Jakarta dan Bursa Efek Surabaya pada tahun 1996.</p>
                 <img src="gedung-bni_169.jpeg" width="450">
             </div>
 
-            <!-- Berita Content -->
             <div id="content-berita" class="hidden">
                 <h2>BERITA</h2>
                 <h3>BNI Perkuat Inklusi Keuangan dan Transaksi Digital Lewat FinExpo 2025</h3>
@@ -57,10 +52,8 @@
                 <p>PT Bank Negara Indonesia (Persero) Tbk atau BNI menegaskan komitmennya dalam memperluas literasi dan inklusi keuangan nasional dengan berpartisipasi aktif dalam ajang Financial Expo (FinExpo) 2025 yang digelar di Tunjungan Plaza, Surabaya, pada 23–26 Oktober 2025.</p>
                  <img src="Berita BNI-29102025.jpeg" alt="">
                 <p>Kegiatan yang diinisiasi oleh Otoritas Jasa Keuangan (OJK) bersama kementerian, lembaga, dan pelaku industri jasa keuangan ini menjadi bagian dari rangkaian Bulan Inklusi Keuangan (BIK) 2025, dengan tema 'Inklusi Keuangan Untuk Semua, Rakyat Sejahtera, Indonesia Maju'.</p>
-               
             </div>
 
-            <!-- Produk Content -->
             <div id="content-produk" class="hidden">
                 <h2>PRODUK KAMI</h2>
                 <div class="produk-grid">
@@ -89,7 +82,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <div class="footer">
         <div class="footer-section">
             <h3>Kantor Pusat</h3>
