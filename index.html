@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Negara Indonesia 46</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <img class="logo" src="logobni.png" alt="" srcset="">
+        <div class="header-title">
+            <h1>Selamat Datang</h1>
+            <p>Di Bank Negara Indonesia 46</p>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <!-- Menu Section -->
+            <div class="menu-section">
+                <h2>MENU</h2>
+                <div class="menu-buttons">
+                    <button class="menu-btn" onclick="showBerita()">Berita</button>
+                    <button class="menu-btn" onclick="showProduk()">Produk kami</button>
+                    <button class="menu-btn" onclick="window.location.href='ebanking.html'">E-Banking</button>
+                </div>
+            </div>
+
+            <!-- Kalkulator Section -->
+            <div class="kalkulator-section">
+                <h2>KALKULATOR</h2>
+                <div class="kalkulator-label">Hitung Kurs Rupiah → Dolar</div>
+                <div class="menu-buttons">
+                    <button class="menu-btn" onclick="window.location.href='hkurs.html'">Hitung Kurs</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Default Content -->
+            <div id="content-default">
+                <h2>Tahukan anda ?</h2>
+                <p>BNI merupakan Bank BUMN (Badan Usaha Milik Negara) pertama yang menjadi perusahaan publik setelah mencatatkan sahamnya di Bursa Efek Jakarta dan Bursa Efek Surabaya pada tahun 1996.</p>
+                <img src="gedung-bni_169.jpeg" width="450">
+            </div>
+
+            <!-- Berita Content -->
+            <div id="content-berita" class="hidden">
+                <h2>BERITA</h2>
+                <h3>BNI Perkuat Inklusi Keuangan dan Transaksi Digital Lewat FinExpo 2025</h3>
+                <p class="berita-date">29/10/2025 18.30.00</p>
+                <p>PT Bank Negara Indonesia (Persero) Tbk atau BNI menegaskan komitmennya dalam memperluas literasi dan inklusi keuangan nasional dengan berpartisipasi aktif dalam ajang Financial Expo (FinExpo) 2025 yang digelar di Tunjungan Plaza, Surabaya, pada 23–26 Oktober 2025.</p>
+                 <img src="Berita BNI-29102025.jpeg" alt="">
+                <p>Kegiatan yang diinisiasi oleh Otoritas Jasa Keuangan (OJK) bersama kementerian, lembaga, dan pelaku industri jasa keuangan ini menjadi bagian dari rangkaian Bulan Inklusi Keuangan (BIK) 2025, dengan tema 'Inklusi Keuangan Untuk Semua, Rakyat Sejahtera, Indonesia Maju'.</p>
+               
+            </div>
+
+            <!-- Produk Content -->
+            <div id="content-produk" class="hidden">
+                <h2>PRODUK KAMI</h2>
+                <div class="produk-grid">
+                    <div class="produk-item">
+                        <h3>ATM</h3>
+                        <p>Klik untuk<br>DETAIL</p>
+                        <button class="produk-detail-btn">Klik untuk DETAIL</button>
+                    </div>
+                    <div class="produk-item">
+                        <h3>Internet Banking</h3>
+                        <p>Klik untuk<br>DETAIL</p>
+                        <button class="produk-detail-btn">Klik untuk DETAIL</button>
+                    </div>
+                    <div class="produk-item">
+                        <h3>Mobile Banking</h3>
+                        <p>Klik untuk<br>DETAIL</p>
+                        <button class="produk-detail-btn">Klik untuk DETAIL</button>
+                    </div>
+                    <div class="produk-item">
+                        <h3>Wondr</h3>
+                        <p>Klik untuk<br>DETAIL</p>
+                        <button class="produk-detail-btn">Klik untuk DETAIL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-section">
+            <h3>Kantor Pusat</h3>
+            <p>Gedung Grha BNI<br>
+            Jl. Jenderal Sudirman Kav. 1<br>
+            Jakarta Pusat 10220<br>
+            Indonesia.<br>
+            <strong>Telepon:</strong><br>
+            +62-21-2511946.</p>
+        </div>
+        <div class="footer-section">
+            <p><strong>BNI berizin dan diawasi oleh Otoritas Jasa Keuangan (OJK) & Bank Indonesia (BI).</strong></p>
+            <p style="margin-top: 12px;"><strong>BNI merupakan peserta penjaminan Lembaga Penjamin Simpanan (LPS). Maksimum nilai simpanan yang dijamin LPS per Nasabah adalah Rp 2 miliar.</strong></p>
+        </div>
+    </div>
+
+    <script>
+        function showBerita() {
+            document.getElementById('content-default').classList.add('hidden');
+            document.getElementById('content-produk').classList.add('hidden');
+            document.getElementById('content-berita').classList.remove('hidden');
+        }
+
+        function showProduk() {
+            document.getElementById('content-default').classList.add('hidden');
+            document.getElementById('content-berita').classList.add('hidden');
+            document.getElementById('content-produk').classList.remove('hidden');
+        }
+
+        function showDefault() {
+            document.getElementById('content-berita').classList.add('hidden');
+            document.getElementById('content-produk').classList.add('hidden');
+            document.getElementById('content-default').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
